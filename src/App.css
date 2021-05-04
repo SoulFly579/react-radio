@@ -1,0 +1,175 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #2c2e33;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #868686;   
+    border-radius: 4px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #666666;
+}
+
+#root {
+    height: 100%;
+}
+
+.App {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background: #36393f;
+    border-bottom: 1px solid #202225;
+    box-sizing: border-box;
+}
+
+.header__logo svg {
+    border-radius: 13px;
+}
+
+.container {
+    overflow-y: auto;
+    flex: 1;
+}
+
+.radio__container {
+    padding: 20px 40px;
+    align-items: center;
+    justify-content: center;
+    background: #36393f;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #202225;
+    border-radius: 13px;
+    padding: 10px 0;
+    color: white;
+}
+
+.radio .radio__logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 13px;
+}
+
+.radio .radio__name {
+    font-size: 18px;
+    text-align: center;
+    width: 30%;
+}
+
+.radio .radio__play {
+    background: transparent;
+}
+
+.radio a svg {
+    fill: #36393f;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.radio__player {
+    bottom: 0;
+    height: 88px;
+    background: #36393f !important;
+    border-top: 1px solid #202225;
+    box-sizing: border-box;
+}
+
+.rhap_container.radio__player {
+    
+}
+
+.rhap_time {
+    color: #868686 !important;
+}
+
+@media only screen and (max-width: 425px) {
+    .radio__container {
+        padding: 10px 20px;
+    }
+}
